@@ -6,6 +6,12 @@ wire  [7:0] out;
 main m(in, out);
 
 initial begin
+    in = 0; #1
+    $display("in  = %b (%0d)", in, in);
+    $display("out = %b (%0d)", out, out);
+    $display("");
+
+    /*
     // ex 1, pg. 2
     in = 0; #1
     $display("in  = %b (%0d)", in, in);
@@ -34,6 +40,7 @@ initial begin
     in = -422; #1
     $display("in  = %b (%0d)", in, in);
     $display("out = %b (%0d)", out, out);
+    */
 end
 
 endmodule
