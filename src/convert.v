@@ -15,6 +15,6 @@ assign exponent = 7 -
     magnitude[5]  ? 5 :
     magnitude[4]  ? 6 : 7);
 
-assign significand = (magnitude << 1);
+assign significand = (magnitude >> exponent);
 
 endmodule
