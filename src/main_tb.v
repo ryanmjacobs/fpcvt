@@ -7,7 +7,7 @@ main m(in, out);
 
 integer x;
 initial begin
-    // Rounding Example 1
+    // Rounding Examples 1-4
     for (x = 44; x <= 47; x=x+1) begin
         in = x; #5
         $display("in  = %b (%0d)", in, in);
