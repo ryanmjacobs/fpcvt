@@ -8,9 +8,9 @@ convert c(magnitude, exponent, significand);
 
 initial begin
    #10
-   $display("magnitude   = %b (%d)", magnitude,   magnitude);
-   $display("exponent    = %b (%d)", exponent,    exponent);
-   $display("significand = %b (%d)", significand, significand);
+   $display("magnitude   = %b (%0d)", magnitude,   magnitude);
+   $display("exponent    = %b (%0d)", exponent,    exponent);
+   $display("significand = %b (%0d)", significand, significand);
 
    $display("%0d * 2^%0d = %0d",
        significand, exponent,
