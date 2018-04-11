@@ -24,3 +24,5 @@ s,e,v
 ```bash
 $ gtkwave main_tb.vcd
 ```
+
+Copyright &copy; 2018 Ryan Jacobs, Kevin Yi
