@@ -13,8 +13,7 @@ always @* begin
   exp_reg = exp;
 
   if (fifth_bit) begin
-    sig_reg = 2;
-
+    sig_reg = sig + 1;
     if (sig_reg < sig) begin
         sig_reg = sig >> 1;
         exp_reg = exp + 1;
