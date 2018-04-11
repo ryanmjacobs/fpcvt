@@ -1,5 +1,7 @@
 language: verilog
-compiler:
-    - iverilog
+addons:
+  apt:
+    packages:
+      - iverilog
 script:
     - bash test.sh
