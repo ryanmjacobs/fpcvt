@@ -5,7 +5,7 @@ module convert(
     output  [3:0] significand
 );
 
-assign significand = 'b101;
+assign significand = (magnitude << 7);
 
 assign exponent =
    (~magnitude[0] ? 0 :
