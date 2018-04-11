@@ -14,7 +14,7 @@ integer x, expanded;
 initial begin
     // Rounding Examples 1-4
     for (x = 44; x <= 47; x=x+1) begin
-        in = 125; #5
+        in = x; #5
 
         expanded = (-1)**sign * val * 2**exp;
 
