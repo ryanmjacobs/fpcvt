@@ -26,7 +26,10 @@ initial begin
         $display("out = %12b (%0d)", out, expanded);
 
         $display("s,e,v");
-        $display("%0d,%0d,%0d\n", sign, exp, val);
+        $display("%0d,%0d,%0d", sign, exp, val);
+
+        if (x < 47)
+            $display(" ");
     end
 end
 
