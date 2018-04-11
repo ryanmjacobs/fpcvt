@@ -1,0 +1,5 @@
+language: verilog
+compiler:
+    - iverilog
+script:
+    - bash test.sh
