@@ -17,6 +17,6 @@ assign exponent = 7 -
     magnitude[4]  ? 6 : 7);
 
 assign significand = magnitude >> exponent;
-assign fifth_bit   = magnitude >> (exponent+1);
+assign fifth_bit   = magnitude >> (exponent-1);
 
 endmodule

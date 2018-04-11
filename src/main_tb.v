@@ -5,29 +5,15 @@ wire  [7:0] out;
 
 main m(in, out);
 
+integer x;
 initial begin
     // Rounding Example 1
-    in = 'b000000_101_100; #5
-    $display("in  = %b (%0d)", in, in);
-    $display("out = %b (%0d)", out, out);
-    $display("");
-
-    // Rounding Example 2
-    in = 'b000000_101_101; #5
-    $display("in  = %b (%0d)", in, in);
-    $display("out = %b (%0d)", out, out);
-    $display("");
-
-    // Rounding Example 3
-    in = 'b000000_101_110; #5
-    $display("in  = %b (%0d)", in, in);
-    $display("out = %b (%0d)", out, out);
-    $display("");
-
-    // Rounding Example 4
-    in = 'b000000_101_111; #5
-    $display("in  = %b (%0d)", in, in);
-    $display("out = %b (%0d)", out, out);
+    for (x = 44; x <= 47; x=x+1) begin
+        in = x; #5
+        $display("in  = %b (%0d)", in, in);
+        $display("out = %b (%0d)", out, out);
+        $display("");
+    end
 end
 
 endmodule
