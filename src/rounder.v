@@ -18,7 +18,7 @@ always @* begin
 
     // detect overflow
     if (sig_reg[4]) begin
-        sig_reg >>= 1;
+        sig_reg = sig_reg >> 1;
         exp_reg = exp + 1;
 
         if (exp_reg < exp) begin

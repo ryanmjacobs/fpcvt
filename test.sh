@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 cd src/
 
 for f in *_tb.v; do
