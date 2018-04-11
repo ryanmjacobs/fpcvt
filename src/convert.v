@@ -7,6 +7,7 @@ module convert(
 
 assign significand = (magnitude);
 
+// priority encoder to count leading zeros
 assign exponent = 8 -
    (magnitude[10] ? 0 :
     magnitude[9]  ? 1 :
