@@ -1,3 +1,4 @@
 a.out
 *.vvp
 *.vcd
+.vscode/settings.json
