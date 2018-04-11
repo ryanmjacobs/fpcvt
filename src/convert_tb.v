@@ -15,7 +15,7 @@ initial begin
 
    $display("%0d * 2^%0d = %0d",
        significand, exponent,
-       significand*2^exponent);
+       significand*2**exponent);
 end
 
 endmodule
