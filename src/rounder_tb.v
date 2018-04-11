@@ -1,5 +1,5 @@
 `include "rounder.v"
-module test();
+module test;
 
 // inputs to rounder
 reg [2:0] exp;

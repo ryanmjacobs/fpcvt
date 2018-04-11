@@ -1,5 +1,5 @@
 `include "TCTSM.v"
-module test();
+module test;
 
 // inputs to tctsm
 reg [11:0] tc;
