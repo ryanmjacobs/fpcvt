@@ -1,12 +1,11 @@
 `include "convert.v"
 module test;
 
-//reg [10:0] magnitude = 11'b0011;
-//reg [10:0] magnitude = 11'b000_0000_0111;
 reg [10:0] magnitude = 422;
 wire [2:0] exponent;
 wire [3:0] significand;
 wire fifth_bit;
+
 convert c(magnitude, exponent, significand, fifth_bit);
 
 initial begin
