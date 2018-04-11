@@ -1,8 +1,8 @@
-module TCTSM(tc, sign, sm);
-    input [11:0] tc;
-    output sign;
-    output [10:0] sm;
-
+module TCTSM(
+    input [11:0] tc,
+    output sign,
+    output [10:0] sm
+);
     reg [10:0] magnitude;
     assign sign = tc[11];
 
