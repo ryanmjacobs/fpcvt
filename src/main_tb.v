@@ -1,25 +1,39 @@
 module test;
-  /* Make a reset that pulses once. */
-  reg reset = 0;
-  initial begin
-     $dumpfile("test.vcd");
-     $dumpvars(0,test);
-  
-     # 17 reset = 1;
-     # 11 reset = 0;
-     # 29 reset = 1;
-     # 11 reset = 0;
-     # 100 $stop;
-  end
-  
-  /* Make a regular pulsing clock. */
-  reg clk = 0;
-  always #5 clk = !clk;
-  
-  wire [7:0] value;
-  counter c1 (value, clk, reset);
-  
-  initial
-     $monitor("At time %t, value = %h (%0d)",
-              $time, value, value);
-endmodule // test
+
+reg  [11:0] in;
+wire  [7:0] out;
+
+main m(in, out);
+
+initial begin
+    // ex 1, pg. 2
+    in = 0; #1
+    $display("in  = %b (%0d)", in, in);
+    $display("out = %b (%0d)", out, out);
+    $display("");
+
+    // ex 2, pg. 2
+    in = -40; #1
+    $display("in  = %b (%0d)", in, in);
+    $display("out = %b (%0d)", out, out);
+    $display("");
+
+    // ex 3/4, pg. 2
+    in = 56; #1
+    $display("in  = %b (%0d)", in, in);
+    $display("out = %b (%0d)", out, out);
+    $display("");
+
+    // ex 1, pg. 3
+    in = 422; #1
+    $display("in  = %b (%0d)", in, in);
+    $display("out = %b (%0d)", out, out);
+    $display("");
+
+    // ex 1, pg. 3
+    in = -422; #1
+    $display("in  = %b (%0d)", in, in);
+    $display("out = %b (%0d)", out, out);
+end
+
+endmodule
