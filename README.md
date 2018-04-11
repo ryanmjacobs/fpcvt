@@ -1,8 +1,8 @@
 # fpcvt (CS 152A) ![build status](https://travis-ci.org/ryanmjacobs/fpcvt.svg?branch=master)
-## Two's complment to floating point conversion
+## Two's complement to floating point conversion
 ![waveform](https://github.com/ryanmjacobs/fpcvt/raw/master/waveform.png)
 
-### Simulatation
+### Simulation
 ```bash
 $ cd src/
 $ iverilog main_tb.v -o main.vvp
