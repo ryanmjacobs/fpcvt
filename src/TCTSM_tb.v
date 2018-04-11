@@ -1,5 +1,4 @@
 `include "TCTSM.v"
-
 module test();
 
 // inputs to tctsm

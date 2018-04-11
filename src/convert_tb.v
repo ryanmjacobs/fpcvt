@@ -1,3 +1,4 @@
+`include "convert.v"
 module test;
 
 //reg [10:0] magnitude = 11'b0011;

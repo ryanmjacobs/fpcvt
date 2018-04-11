@@ -1,3 +1,6 @@
+`include "TCTSM.v"
+`include "convert.v"
+`include "rounder.v"
 module main(
     input  [11:0] in, // linear encoding (two's complement)
     output [7:0]  out // floating point output

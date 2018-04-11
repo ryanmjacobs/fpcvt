@@ -1,3 +1,4 @@
+`include "main.v"
 module test;
 
 reg  [11:0] in;
