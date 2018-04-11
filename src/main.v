@@ -8,12 +8,12 @@ module main(
 
 wire sign;
 wire [10:0] magnitude;
-wire  [2:0] exponent;
-wire  [3:0] significand;
+wire [ 2:0] exponent;
+wire [ 3:0] significand;
 wire fifth_bit;
 
-wire  [2:0] rounded_exp;
-wire  [3:0] rounded_sig;
+wire [2:0] rounded_exp;
+wire [3:0] rounded_sig;
 
   TCTSM a(in, sign, magnitude);
 convert b(magnitude, exponent, significand, fifth_bit);
