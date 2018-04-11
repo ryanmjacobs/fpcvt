@@ -7,6 +7,7 @@ wire sign;
 wire [10:0] magnitude;
 wire  [2:0] exponent;
 wire  [3:0] significand;
+wire fifth_bit;
 
 wire  [2:0] final_exp;
 wire  [3:0] final_sig;
