@@ -22,6 +22,8 @@ initial begin
         in = x; #1
         expanded = (-1)**sign * val * 2**exp;
 
+        $display("%b == %0d", in, in);
+
         $display("in  = %b (%0d)", in, in);
         $display("out = %12b (%0d)", out, expanded);
 
