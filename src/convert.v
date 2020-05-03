@@ -7,14 +7,14 @@ module convert(
 );
 
 // priority encoder to count leading zeros
-assign exponent = 7 -
-   (magnitude[10] ? 0 :
-    magnitude[9]  ? 1 :
-    magnitude[8]  ? 2 :
-    magnitude[7]  ? 3 :
-    magnitude[6]  ? 4 :
-    magnitude[5]  ? 5 :
-    magnitude[4]  ? 6 : 7);
+assign exponent =
+   (magnitude[10] ? 7 :
+    magnitude[9]  ? 6 :
+    magnitude[8]  ? 5 :
+    magnitude[7]  ? 4 :
+    magnitude[6]  ? 3 :
+    magnitude[5]  ? 2 :
+    magnitude[4]  ? 1 : 0);
 
 assign significand = magnitude >> exponent;
 assign fifth_bit   = magnitude >> (exponent-1);
